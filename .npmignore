@@ -1,0 +1,9 @@
+*.ts
+!*.d.ts
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+
+aws cloudformation create-stack --stack-name baselime-connector --capabilities CAPABILITY_NAMED_IAM --region eu-central-1 --template-url 'https://prod-aws-integrator-comm-initialiserbucketbucketc-1af16c2z77trm.s3.eu-west-1.amazonaws.com/cf-templates/airbnb/506820257931/eu-central-1/prod.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIARNTRNSTC5V27P2UO%2F20240624%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20240624T232110Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAgaCWV1LXdlc3QtMSJHMEUCIColaUIqTXXNDZGh77d2QNORSMMdfwQHhpaxen3u22RJAiEAq6zFym198tbKmPmOnx9xajFEoS7kI0a3gr%2FzkJltjtkqnAMIsP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwwOTc5NDgzNzQyMTMiDOmunmNDiC2w40Y9ISrwAluC52N0CmZkW1oK50wgyurvMQLEgF9oFZdyXuOYHIIIXCRojdvGYfB817asdcPfwgYll5WH7S2XR6%2BZIojpl3pn4R6WNhH8HdiyadtsTTVuup57v%2FYtmwpYjJbj2PDc5LB1zzP0tyavubNhqV%2F7WPuAqShpuRfMVLL%2FCSXBqLBc54xeYw6PoxG5FRol70%2B8Fb5D%2BpKMEwS3tCrMXQF3V5SmpB12arJsw9rHejwKuu0QtUO7KXI1BrzcuFnmR9CSd7p5B7ydRg5Zw6v9qgzhf59WCu30nCIvmk0yknOJNxG8vg8QTVQbKvsXEWxr1Lta%2B2Iy61W90bV7Atuogz0hW2nYG%2BiepqEIrKjx0U0qMe3nj%2BoiUP0ze5uzVyqrUTEaacVBYsYh5Wva0LjElOfEoXB7mMXtJj5Bb1LatUtvU5Z2FxYRDKcUXR7FiYaelZ2qxh3X%2Fd423EfnMSNPXL7z%2B3mEIc98q67ituB6rs%2ByfG0WMOP%2B57MGOp0BZcFg50tiFq9hlg6WZDX%2FO0dxB4eBkS30Wjqmzm5Mr%2F2SWP3sOZk2c2C5%2FIAr6%2B2UtVj67ZRUEPhQCYLMIW9y7oPoW0pkOwmNXJaH8IcfjlRUqJgmkUnfnDmVQ%2FLv6rzYBo1NvlW1oBSVRQDOISfB9zFG9rRF'
