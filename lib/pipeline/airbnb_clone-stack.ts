@@ -6,7 +6,7 @@ import {
   CodePipelineSource,
   ManualApprovalStep,
 } from "aws-cdk-lib/pipelines";
-import { PipelineStage } from "./pipeline-stage";
+import { PipelineStage } from "../pipeline/pipeline-stage";
 
 export class AirbnbCloneStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
