@@ -1,4 +1,4 @@
-import { AcmsSharedStack } from "./airbnb-shared-stack";
+import { AirbnbSharedStack } from "../infra/cognitostack"; // Corrected import
 import { Stage, StageProps } from "aws-cdk-lib";
 import { Construct } from "constructs";
 
@@ -9,9 +9,8 @@ export class PipelineStage extends Stage {
     /***********************************
      *    Instantiate the shared stack
      ***********************************/
-    new AcmsSharedStack(this, "sharedStack", {
-        stageName: props?.stageName as string,
-      });
+    new AirbnbSharedStack(this, "sharedStack", {
+      // Removed stageName as it is not a property of StackProps
+    });
   }
 }
-
