@@ -17,7 +17,7 @@ const apiStack = new AirbnbApiStack(app, "AppsyncStack", {
   userPool: sharedStack.userPool,
 });
 
-// Initialize the UserStack
+// Initialize the UserStack, to create users
 new UserStack(app, "UserStack", {
   airbnbGraphqlApi: apiStack.airbnbGraphqlApi,
   airbnbDatabase: databaseStack.airbnbDatabase,
