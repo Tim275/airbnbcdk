@@ -41,6 +41,6 @@ export class PipelineStack extends cdk.Stack {
       })
     );
 
-    // devStage.addPost(new ManualApprovalStep("ManualApprovalBeforeProduction"));
+    devStage.addPost(new ManualApprovalStep("ManualApprovalBeforeProduction"));
   }
 }

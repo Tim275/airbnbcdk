@@ -7,6 +7,7 @@ type Mutation {
   createUserAccount(input: UserInput!): User! @aws_cognito_user_pools
   updateUserAccount(input: UpdateUserInput!): User! @aws_cognito_user_pools
   deleteUserAccount(id: ID!): Boolean! @aws_cognito_user_pools
+
   leaveFeedback(input: RatingsAndFeedbackInput!): RatingsAndFeedback!
     @aws_cognito_user_pools
 

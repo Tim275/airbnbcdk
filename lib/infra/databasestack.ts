@@ -7,9 +7,14 @@ import {
   StreamViewType,
   ProjectionType,
 } from "aws-cdk-lib/aws-dynamodb";
+import * as appsync from "aws-cdk-lib/aws-appsync";
 
 export class AirbnbDatabaseStack extends Stack {
+  // space
   public readonly airbnbDatabase: Table;
+  public readonly airbnbGraphqlApi: appsync.GraphqlApi;
+  /// space
+
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
