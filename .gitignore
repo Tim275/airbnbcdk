@@ -1,5 +1,6 @@
 *.js
 !jest.config.js
+!src/lib/infra/js_resolver/_before_and_after_mapping_template.js
 *.d.ts
 node_modules
 .env

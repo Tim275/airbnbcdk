@@ -31,6 +31,10 @@ export class AirbnbSharedStack extends Stack {
       "AirbnbUserPoolClient",
       {
         userPool: this.userPool,
+        authFlows: {
+          userPassword: true,
+          userSrp: true, // Enable USER_SRP_AUTH
+        },
       }
     );
   }
